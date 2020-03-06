@@ -1,0 +1,190 @@
+@import "reset","fonts", "media", "carusel"
+
+// COLORS
+
+$g-l: #9ac2c2
+$g-d: #6aa5a5
+$red: #ba4545
+$bgw: #F5F5F5
+
+body
+    background: #ffffff
+    font-size: 14px
+    font-weight: 300
+
+.container
+    max-width: 1280px
+    margin: 0 auto
+    
+    
+h2
+    font-size: 33px
+    text-transform: uppercase
+    
+    
+// CONTACT TOP
+.top-contact
+    background-color: $g-l
+    position: absolute
+    display: block
+    top: 0
+    width: 100%
+    color: #ffffff
+    padding: 10px 20px
+    font-weight: 400
+    &_item
+        display: flex
+        justify-content: space-between
+        align-items: center
+        font-size: 18px
+        font-weight: 400
+       
+        ul
+           
+            display: flex
+            justify-content: right
+            
+            li
+                margin: 20px
+                padding-right: 15px
+        a
+            color: #ffffff
+            font-weight: 400
+
+
+// HEADER
+.header
+    margin-top: 45px
+    width: 100%
+    // border: 1px solid red
+    .nav
+        font-size: 22px
+        li
+            margin-right: 10px
+            a 
+                color: #000
+
+
+
+
+.logo
+    img 
+        width: 250px
+        height: auto
+.header-nav
+    padding: 10px 0
+        
+.header-nav, .header-nav ul
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+
+// BUTTON
+.btn
+    border: none
+    background-color: $red
+    color: #ffffff
+    
+    border-radius: 3px
+    cursor: pointer
+    &_callback
+    
+    padding: 5px 10px
+    font-size: 18px
+    &_request
+        font-size: 26px
+        padding: 15px 20px
+
+// CARUSEL
+.carusel
+    min-width: 0
+    img
+        display: block
+        width: 2543px
+        height: 890px
+        opacity: 0.3
+        background: rgba(255, 255, 255, .9)
+        
+.carusel_block_sale
+    position: absolute
+    top: 50%
+    left: 50%
+    margin-right: -50%
+    transform: translate(-50%, -50%)
+    &__text
+        font-size: 114px
+        color: #000
+        animation-duration: 3s
+        &_p
+            font-size: 22px
+
+        
+.carusel_block
+    position: relative
+    
+    
+// BLOCK 2 choose_us
+.choose_us
+    background-color: $g-l
+    padding: 150px 0
+    margin-bottom: 40px
+    color: $bgw
+.title
+    text-align: center
+    p
+        font-size: 22px
+        text-transform: uppercase
+    
+.choose_us_content
+    display: flex   
+    margin-top: 40px
+    ul
+        text-align: left
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        li
+            margin: 25px
+            display: flex
+            // align-items: center
+    
+            img
+                margin: 20px
+                width: 60pt
+                height: auto
+              
+                
+.choose_us_content__text
+    padding-left: 10px
+    font-size: 33px
+    p
+        margin: 10px 30px 0 0
+        font-size: 14px
+        
+        
+// BLOCK 3
+
+// Оставьть заявку
+
+.request_form
+    margin: 150px 0
+    display: flex
+    flex-direction: column
+    
+    input
+        text-align: center
+        margin: 20px 0
+        font-size: 46px
+        border: none
+        border-bottom: 2px solid #e2e2e2
+        &:focus
+            border-bottom: 2px solid $g-d
+        &::placeholder
+            color: $g-l
+
+//  Block 4
+// Отзывы
+.reviews
+    padding: 150px 0
+    color: #ffffff
+    background-color: $g-l
